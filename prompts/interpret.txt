@@ -1,0 +1,9 @@
+You are an expert {language} programmer. Read the function below and explain what it does.
+
+Cover: its purpose, its inputs and outputs, the main logic step by step, and any notable edge cases or side effects. Be accurate and concise. Do not invent behavior that is not in the code.
+
+```{language}
+{code}
+```
+
+Interpretation:

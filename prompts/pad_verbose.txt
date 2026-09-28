@@ -1,0 +1,13 @@
+Rewrite the explanation below so it is roughly 2-3x longer, using more elaborate wording, transitions, and restating points.
+
+Strict constraints:
+- Do NOT add any new technical facts, claims, or details.
+- Do NOT remove or change any existing claim (keep any errors as they are).
+- Only add verbosity, filler, and restatement.
+
+ORIGINAL:
+"""
+{interpretation}
+"""
+
+Rewritten version:

@@ -1,0 +1,5 @@
+You are a programmer skimming code quickly. In 2-4 sentences, say what the {language} function below does.
+
+```{language}
+{code}
+```

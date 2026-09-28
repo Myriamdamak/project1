@@ -1,0 +1,23 @@
+You are a strict, impartial grader of code explanations.
+
+Two explanations (A and B) describe the same code. Decide which is more correct and complete with respect to the code. Ignore length, tone, and formatting. If they are equally good, answer "tie".
+
+Language: {language}
+
+CODE:
+```
+{code}
+```
+
+EXPLANATION A:
+"""
+{a}
+"""
+
+EXPLANATION B:
+"""
+{b}
+"""
+
+Respond with JSON only:
+{"reasoning": "<brief>", "winner": "A" | "B" | "tie"}
