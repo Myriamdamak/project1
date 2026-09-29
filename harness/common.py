@@ -23,16 +23,22 @@ _client = None
 def client():
     global _client
     if _client is None:
-        _client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+        _client = genai.Client(
+            api_key=os.environ["GEMINI_API_KEY"],
+            http_options=types.HttpOptions(
+                retry_options=types.HttpRetryOptions(attempts=1)
+            ),
+        )
     return _client
 
-
-def generate(prompt, temperature=0.0, json_mode=False, retries=5):
+def generate(prompt, temperature=0.0, json_mode=False, retries=1):
     cfg = types.GenerateContentConfig(
         temperature=temperature,
         response_mime_type="application/json" if json_mode else None,
     )
     for attempt in range(retries):
+        time.sleep(15)
+
         try:
             resp = client().models.generate_content(model=MODEL, contents=prompt, config=cfg)
             if resp.text:
