@@ -1,0 +1,214 @@
+{
+  "human_A_vs_human_B": {
+    "n": 160,
+    "exact_agreement": 0.9187,
+    "within_1": 1.0,
+    "mae": 0.0813,
+    "cohen_kappa": 0.8669,
+    "weighted_kappa_linear": 0.9454,
+    "weighted_kappa_quadratic": 0.9798,
+    "spearman": 0.9696,
+    "mean_diff_x_minus_y": 0.0813,
+    "confusion_matrix_rows_x_cols_y": [
+      [
+        64,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        70
+      ]
+    ]
+  },
+  "judge_vs_human_A": {
+    "n": 71,
+    "exact_agreement": 0.831,
+    "within_1": 1.0,
+    "mae": 0.169,
+    "cohen_kappa": 0.7299,
+    "weighted_kappa_linear": 0.8862,
+    "weighted_kappa_quadratic": 0.9572,
+    "spearman": 0.9335,
+    "mean_diff_x_minus_y": -0.1408,
+    "confusion_matrix_rows_x_cols_y": [
+      [
+        28,
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        5
+      ],
+      [
+        0,
+        0,
+        1,
+        27
+      ]
+    ]
+  },
+  "judge_vs_human_B": {
+    "n": 71,
+    "exact_agreement": 0.9155,
+    "within_1": 1.0,
+    "mae": 0.0845,
+    "cohen_kappa": 0.8559,
+    "weighted_kappa_linear": 0.9432,
+    "weighted_kappa_quadratic": 0.9794,
+    "spearman": 0.963,
+    "mean_diff_x_minus_y": -0.0563,
+    "confusion_matrix_rows_x_cols_y": [
+      [
+        34,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        5
+      ],
+      [
+        0,
+        0,
+        1,
+        27
+      ]
+    ]
+  },
+  "judge_vs_consensus (A==B only)": {
+    "n": 65,
+    "exact_agreement": 0.9077,
+    "within_1": 1.0,
+    "mae": 0.0923,
+    "cohen_kappa": 0.8447,
+    "weighted_kappa_linear": 0.9378,
+    "weighted_kappa_quadratic": 0.9772,
+    "spearman": 0.9523,
+    "mean_diff_x_minus_y": -0.0615,
+    "confusion_matrix_rows_x_cols_y": [
+      [
+        28,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        5
+      ],
+      [
+        0,
+        0,
+        1,
+        27
+      ]
+    ]
+  },
+  "n_consensus_items": 147,
+  "spearman_judge_vs_human_mean": 0.9354,
+  "per_language": {
+    "C#": {
+      "n": 16,
+      "human_A_vs_B_exact": 0.875,
+      "judge_vs_A_exact": 0.8571,
+      "judge_vs_B_exact": 1.0
+    },
+    "C++": {
+      "n": 16,
+      "human_A_vs_B_exact": 1.0,
+      "judge_vs_A_exact": 0.9375,
+      "judge_vs_B_exact": 0.9375
+    },
+    "Go": {
+      "n": 16,
+      "human_A_vs_B_exact": 0.9375,
+      "judge_vs_A_exact": null,
+      "judge_vs_B_exact": null
+    },
+    "Java": {
+      "n": 16,
+      "human_A_vs_B_exact": 0.875,
+      "judge_vs_A_exact": 0.625,
+      "judge_vs_B_exact": 0.75
+    },
+    "JavaScript": {
+      "n": 16,
+      "human_A_vs_B_exact": 0.9375,
+      "judge_vs_A_exact": 0.875,
+      "judge_vs_B_exact": 0.9375
+    },
+    "Kotlin": {
+      "n": 16,
+      "human_A_vs_B_exact": 0.9375,
+      "judge_vs_A_exact": null,
+      "judge_vs_B_exact": null
+    },
+    "PHP": {
+      "n": 16,
+      "human_A_vs_B_exact": 1.0,
+      "judge_vs_A_exact": null,
+      "judge_vs_B_exact": null
+    },
+    "Python": {
+      "n": 16,
+      "human_A_vs_B_exact": 0.875,
+      "judge_vs_A_exact": 0.875,
+      "judge_vs_B_exact": 1.0
+    },
+    "Ruby": {
+      "n": 16,
+      "human_A_vs_B_exact": 0.875,
+      "judge_vs_A_exact": null,
+      "judge_vs_B_exact": null
+    },
+    "Rust": {
+      "n": 16,
+      "human_A_vs_B_exact": 0.875,
+      "judge_vs_A_exact": null,
+      "judge_vs_B_exact": null
+    }
+  }
+}

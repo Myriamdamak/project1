@@ -22,6 +22,19 @@ def judge_one(language, code, interpretation):
     return score, result.get("reasoning", "")
 
 
+def judge_item(row):
+    if row.get("judge_score") is not None:
+        return row
+    try:
+        score, reasoning = judge_one(
+            row["language"], row["code"], row["LLM_interpretation"]
+        )
+        return {**row, "judge_score": score, "judge_reasoning": reasoning}
+    except Exception as error:
+        print(f"Error judging item {row.get('id')}: {error}")
+        return {**row, "judge_score": None, "judge_reasoning": None}
+
+
 def save(out, rows):
     temporary = out.with_suffix(".tmp")
     write_jsonl(temporary, rows)
